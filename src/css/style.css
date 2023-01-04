@@ -1,4 +1,53 @@
-*{
-    padding: 0;
-    margin: 0;
+.header {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  z-index: -999;
 }
+
+.letter {
+  letter-spacing: 1.5px;
+}
+
+.hoverBurger {
+  transition: all 1s ease-in-out;
+}
+
+.hoverBurger:hover {
+  transform: scale(105%);
+  transform: scale(120%);
+  /* animation: HoverBurger 1.5s */
+}
+
+/* @keyframes HoverBurger{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+} */
+/* //////////////////////////////////   PARTICLE JS   ///////////////////////////////// */
+/* ---- reset ---- */
+canvas {
+  z-index: -1;
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #191e43;
+  background-image: url(../Images/fondetoile.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: cover;
+} /* ---- stats.js ---- */
+.couleurTest {
+  color: #fff;
+}
+.couleurTest:hover {
+  background: #991b1b;
+}
+
+/*# sourceMappingURL=style.css.map */
