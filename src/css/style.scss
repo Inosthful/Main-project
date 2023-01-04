@@ -33,8 +33,8 @@
 
 
 
-/* ---- reset ---- */ canvas{z-index: -1; display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #191e43; background-image: url(../Images/fondetoile.jpg);
-    background-repeat: no-repeat; background-position: 0% 50%; background-size: cover; } /* ---- stats.js ---- */
+/* ---- reset ---- */canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #232427; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; z-index: -2; } /* ---- stats.js ---- */
+
 
 @mixin test($colorText, $colorHover){
     color: $colorText;
