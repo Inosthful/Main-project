@@ -1,0 +1,58 @@
+.header {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  z-index: -999;
+}
+
+.letter {
+  letter-spacing: 1.5px;
+}
+
+.hoverBurger {
+  transition: all 1s ease-in-out;
+}
+
+.hoverBurger:hover {
+  transform: scale(105%);
+  transform: scale(120%);
+  /* animation: HoverBurger 1.5s */
+}
+
+/* @keyframes HoverBurger{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+} */
+/* //////////////////////////////////   PARTICLE JS   ///////////////////////////////// */
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #232427;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -2;
+} /* ---- stats.js ---- */
+.couleurTest {
+  color: #fff;
+}
+.couleurTest:hover {
+  background: #991b1b;
+}
+
+/*# sourceMappingURL=style.css.map */
