@@ -1,85 +1,55 @@
 
-
-
-
-
-
-
-
-
-// PARTICLE JS 
-
-particlesJS("particles-js", 
-{"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ff0000"},
-"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},
-"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5050544906446545,
-"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},
-"size":{"value":0,"random":false,"anim":{"enable":false,"speed":7.192807192807193,"size_min":0.1,"sync":false}},
-"line_linked":{"enable":true,"distance":180,"color":"#ffffff","opacity":0.40246529723245905,"width":0},
-"move":{"enable":true,"speed":4,"direction":"none","random":false,"straight":false,"out_mode":"out",
-"bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window",
-"events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":false,"mode":"bubble"},"resize":true},
-"modes":{"grab":{"distance":353.2535873510851,"line_linked":{"opacity":1}},"bubble":{"distance":1218.1158184520177,
-"size":0,"duration":0.9744926547616141,"opacity":0.4466424667657398,"speed":3},"repulse":{"distance":200,
-"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const anime = window.anime;
+
+$(window).on('load', function() { // makes sure the whole site is loaded 
+	$('#status').delay(3000).fadeOut('slow'); // will first fade out the loading animation 
+	$('#preloader').delay(4500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+
+})
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 800,
+    easing: "easeOutExpo",
+    translateY: function(e, i, l) {
+      var offset = -0.625 + 0.625*2*i;
+      return offset + "em";
+    }
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5',
+    opacity: 0,
+    duration: 3500,
+    easing: "easeOutExpo",
+    delay: 3500
+  });
 
 
 
