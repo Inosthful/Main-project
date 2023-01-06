@@ -44,10 +44,17 @@ canvas {
   z-index: -2;
 } /* ---- stats.js ---- */
 .couleurTest {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 .couleurTest:hover {
   background: #991b1b;
+}
+
+.couleurName {
+  color: white;
+}
+.couleurName:hover {
+  color: #991b1b;
 }
 
 /*# sourceMappingURL=style.css.map */
