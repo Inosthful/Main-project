@@ -29,8 +29,64 @@ canvas {
   z-index: -999;
 }
 
+.hrStyle {
+  margin-left: 60vw;
+  max-width: 75px;
+  border: solid 1px;
+  border-color: #b3b2b2;
+}
+@media screen and (min-width: 800px) {
+  .hrStyle {
+    margin-left: 40vw;
+  }
+}
+@media screen and (min-width: 650px) {
+  .hrStyle {
+    margin-left: 55vw;
+  }
+}
+
+@media (min-width: 400px) {
+  .hrStyle {
+    margin-left: 40vw;
+  }
+}
+@media (min-width: 575px) {
+  .hrStyle {
+    margin-left: 41.5vw;
+  }
+}
+@media (min-width: 650px) {
+  .hrStyle {
+    margin-left: 43vw;
+  }
+}
+@media (min-width: 750px) {
+  .hrStyle {
+    margin-left: 45vw;
+  }
+}
+@media (min-width: 950px) {
+  .hrStyle {
+    margin-left: 46.5vw;
+  }
+}
+@media (min-width: 1200px) {
+  .hrStyle {
+    margin-left: 48.2vw;
+  }
+}
+.barking {
+  padding: 0;
+  margin: 0;
+}
+
 .letter {
   letter-spacing: 1.5px;
+}
+
+.letters {
+  letter-spacing: 1px;
 }
 
 .hoverBurger {
@@ -58,16 +114,19 @@ canvas {
 }
 
 .transitionOnClick {
+  animation-delay: 6s;
   height: 100%;
-  animation: transitiononclick2 1.5s;
+  animation: transitiononclick2 2;
 }
 
 .transitionOnClick2 {
-  animation: transitiononclick 1.5s;
+  animation-delay: 6s;
+  animation: transitiononclick 2;
 }
 
 .football {
-  animation: footballAnim 1.5s;
+  animation-delay: 6s;
+  animation: footballAnim 2s;
 }
 
 @keyframes transitiononclick2 {
