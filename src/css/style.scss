@@ -123,12 +123,17 @@
 }
 
 
+.Jules{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 ////////////////////////////////////// DONNEZ BLAZE MAIS EN GROS APRES LA NAV   /////////////////////////////////////
 
 
 #preloader { position: fixed; inset: 0px; background-color: #232427; z-index: 9999; height: 100%; }
-#status { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+#status { position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); }
 .ml5 { position: relative; font-weight: 300; font-size: 4.5em; color: rgb(255, 255, 255); }
 .ml5 .text-wrapper { position: relative; display: inline-block; padding-top: 0.1em; padding-right: 0.05em; padding-bottom: 0.15em; line-height: 1em; }
 .ml5 .line { position: absolute; left: 0px; top: 0px; bottom: 0px; margin: auto; height: 3px; width: 100%; background-color: rgb(255, 255, 255); }

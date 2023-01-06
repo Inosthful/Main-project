@@ -96,6 +96,12 @@ canvas {
     opacity: 1;
   }
 }
+.Jules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #preloader {
   position: fixed;
   inset: 0px;
@@ -106,7 +112,7 @@ canvas {
 
 #status {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
