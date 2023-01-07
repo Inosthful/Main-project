@@ -14,101 +14,110 @@
 
     <!-- https://www.youtube.com/watch?v=m0fTjbFDrcw   PRELOADER -->
     <!-- https://codepen.io/kylehenwood/pen/yLzRyj    https://codepen.io/jimmie/pen/naWJrX     ANIMATION BOUTON -->
+    <!-- bouton pour affiché les techs utilisés ?  -->
 </head>
 
+
 <body class="h-full w-full">
-    <header>
-        <div id="preloader">
-            <div id="status">
-                <h1 class="ml5">
-                    <span class="text-wrapper">
-                        <span class="line line1"></span>
-                        <span class="letters letters-left">E</span>
-                        <span class="letters letters-right">M</span>
-                        <span class="line line2"></span>
-                    </span>
-                </h1>
-            </div>
-        </div>
-    </header>
     <div id="particles-js"></div>
 
-
-    <section class="header  flex flex-col text-center justify-between" id="header">
-        <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded">
-            <div class="container flex flex-wrap items-center  justify-around mx-auto py-4 ">
-                <a href="#" class="flex items-center football">
-                    <!-- Changer couleur nom  -->
-                    <span
-                        class=" block py-2 pl-3 pr-4 text-2xl text-red-400 hover:underline hover:text-red-600 opacity-30 letter md:hover:bg-transparent md:border-0 md:p-0 font-semibold">ENZO
-                        MARTINEZ
-                    </span>
-                </a>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hoverBurger focus:ring-1 focus:ring-gray-500"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                <div class="hidden w-full h-full md:block md:w-auto " id="navbar-default">
-                    <ul
-                        class="flex flex-col p-4 mt-4 border transitionOnClick border-gray-400 bg-[#232427] opacity-50 rounded-lg  md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold"
-                                aria-current="page">ACCUEIL</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2  pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">PORTFOLIO</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">FORMATION</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">CONTACT</a>
-                        </li>
-                    </ul>
+        <header>
+            <div id="preloader">
+                <div id="status">
+                    <h1 class="ml5">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters letters-left">E</span>
+                            <span class="letters letters-right">M</span>
+                            <span class="line line2"></span>
+                        </span>
+                    </h1>
                 </div>
             </div>
-        </nav>
+        </header>
 
-        <div class="text-white opacity-50" style="padding-bottom: 8vw;">
-            <div class="">
-                <div class="text-1 text-2xl letters md:text-3xl lg:text-5xl pb-7">
-                    Tout d'abord, laissez moi me présenter.
+
+        <section class="header  flex flex-col text-center justify-between" id="header">
+            <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+                <div class="container flex flex-wrap items-center  justify-around mx-auto py-4 ">
+                    <a href="#" class="flex items-center football">
+                        <!-- Changer couleur nom  -->
+                        <span
+                            class=" block py-2 pl-3 pr-4 text-2xl text-red-400 hover:underline hover:text-red-600 opacity-30 letter md:hover:bg-transparent md:border-0 md:p-0 font-semibold">ENZO
+                            MARTINEZ
+                        </span>
+                    </a>
+                    <button data-collapse-toggle="navbar-default" type="button"
+                        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hoverBurger focus:ring-1 focus:ring-gray-500"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden w-full h-full md:block md:w-auto " id="navbar-default">
+                        <ul
+                            class="flex flex-col p-4 mt-4 border transitionOnClick border-gray-400 bg-[#232427] opacity-50 rounded-lg  md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold"
+                                    aria-current="page">ACCUEIL</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2  pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">PORTFOLIO</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">FORMATION</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">CONTACT</a>
+                            </li>
+                        </ul>
+
                 </div>
-                <hr class="hrStyle">
-                <div class="text-2 text-2xs letters md:text-xs lg:text-sm pt-7">
-                    Mon nom est Enzo Martinez, j'ai 19 ans et je suis étudiant en tant que Développeur Web et Web Mobile 
-                    <div class="py-1 "></div>
-                       a l'AFPA.
-                        Je vous présente ci dessous mon porfolio et des exemples de mes<a href="#header" class="text-red-400 hover:underline hover:text-red-600"> travaux réalisés.</a>
-                 
-                </div>
+            </nav>
+
+            <div class="text-white opacity-50" style="padding-bottom: 6vw;">
+                <div class="">
+                    <div class="text-1 text-2xl letters md:text-3xl lg:text-5xl pb-7">
+                        Tout d'abord, laissez moi me présenter.
+                    </div>
+                    <hr class="hrStyle">
+                    <div class="text-2 text-2xs letters md:text-xs lg:text-sm pt-7">
+                        Mon nom est Enzo Martinez, j'ai 19 ans et je suis étudiant en tant que Développeur Web et Web Mobile 
+                        <div class="py-1 "></div>
+                        a l'AFPA.
+                            Je vous présente ci dessous mon porfolio et des exemples de mes<a href="#header" class="text-red-400 hover:underline hover:text-red-600"> travaux réalisés.</a>
+                    
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="enbasla">
-            fleche icone et tout ca la tu connais
-        </div>
+            <div class="enbasla pb-3">
+                <button type="button" class="text-white opacity-50 md:hover:text-red-600 "> 
+                    <a href="https://instagram.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </a>
+                  </button>
+            </div>
 
-    </section>
+        </section>
 
-    <section class="Jules">
-        Jules suce des bites
-    </section>
+        <section class="Jules">
+            Jules suce des bites
+        </section>
 
     <!-- <script src="https://unpkg.com/scrollreveal"></script>  SCROLL REVEAL  https://github.com/oddoculus/scrollreveal -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"
