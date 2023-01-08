@@ -1,13 +1,25 @@
-
-/* @keyframes HoverBurger{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.5);
-    }
-} */
-
+#preloader { position: fixed; inset: 0px; background-color: #232427; z-index: 9999; height: 100%; }
+#status { position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); }
+.ml5 { position: relative; font-weight: 300; font-size: 4.5em; color: rgb(255, 255, 255); }
+.ml5 .text-wrapper { position: relative; display: inline-block; padding-top: 0.1em; padding-right: 0.05em; padding-bottom: 0.15em; line-height: 1em; }
+.ml5 .line { position: absolute; left: 0px; top: 0px; bottom: 0px; margin: auto; height: 3px; width: 100%; background-color: rgb(255, 255, 255); }
+.ml5 .ampersand { font-family: Baskerville, "EB Garamond", serif; font-style: italic; font-weight: 400; width: 1em; margin-right: -0.1em; margin-left: -0.1em; color: rgb(240, 95, 64) !important; }
+.ml5 .letters { display: inline-block; opacity: 0; }
+canvas { position: fixed; }
+header.masthead { padding-top: 10rem; padding-bottom: calc(10rem - 56px); background-color: rgb(33, 37, 41); background-image: url(""); background-position: center center; background-size: cover; }
+header.masthead hr { margin-top: 30px; margin-bottom: 30px; }
+header.masthead h1 { font-size: 2rem; }
+header.masthead p { font-weight: 300; }
+@media (min-width: 768px) {
+  header.masthead p { font-size: 1.15rem; }
+}
+@media (min-width: 992px) {
+  header.masthead { height: 100vh; min-height: 650px; padding-top: 0px; padding-bottom: 0px; }
+  header.masthead h1 { font-size: 3rem; }
+}
+@media (min-width: 1200px) {
+  header.masthead h1 { font-size: 4rem; }
+}
 // npx sass --watch src/css/style.scss:src/css/style.css
 
 /* //////////////////////////////////   PARTICLE JS   ///////////////////////////////// */
@@ -22,7 +34,11 @@
 .header{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    z-index: -999;
+    // z-index: -999;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
 .hrStyle{
@@ -113,6 +129,7 @@
 }
 
 
+
 .couleurTest{
     @include couleurNavM(rgb(255, 255, 255), #991b1b);
 }
@@ -179,34 +196,7 @@
 }
 
 
-.Jules{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-////////////////////////////////////// DONNEZ BLAZE MAIS EN GROS APRES LA NAV   /////////////////////////////////////
+////////////////////////////////////// MODALS /////////////////////////////////////
 
 
-#preloader { position: fixed; inset: 0px; background-color: #232427; z-index: 9999; height: 100%; }
-#status { position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); }
-.ml5 { position: relative; font-weight: 300; font-size: 4.5em; color: rgb(255, 255, 255); }
-.ml5 .text-wrapper { position: relative; display: inline-block; padding-top: 0.1em; padding-right: 0.05em; padding-bottom: 0.15em; line-height: 1em; }
-.ml5 .line { position: absolute; left: 0px; top: 0px; bottom: 0px; margin: auto; height: 3px; width: 100%; background-color: rgb(255, 255, 255); }
-.ml5 .ampersand { font-family: Baskerville, "EB Garamond", serif; font-style: italic; font-weight: 400; width: 1em; margin-right: -0.1em; margin-left: -0.1em; color: rgb(240, 95, 64) !important; }
-.ml5 .letters { display: inline-block; opacity: 0; }
-canvas { position: fixed; }
-header.masthead { padding-top: 10rem; padding-bottom: calc(10rem - 56px); background-color: rgb(33, 37, 41); background-image: url(""); background-position: center center; background-size: cover; }
-header.masthead hr { margin-top: 30px; margin-bottom: 30px; }
-header.masthead h1 { font-size: 2rem; }
-header.masthead p { font-weight: 300; }
-@media (min-width: 768px) {
-  header.masthead p { font-size: 1.15rem; }
-}
-@media (min-width: 992px) {
-  header.masthead { height: 100vh; min-height: 650px; padding-top: 0px; padding-bottom: 0px; }
-  header.masthead h1 { font-size: 3rem; }
-}
-@media (min-width: 1200px) {
-  header.masthead h1 { font-size: 4rem; }
-}
+
