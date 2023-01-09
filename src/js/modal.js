@@ -1,45 +1,64 @@
-$("#hoverModal1").mouseover(function(){
-    $("#hoverModal1").css("transform", "scale(1.1)");
+const hover1 = document.querySelector("#hoverModal1")
+console.log(hover1)
 
-})
-$("#hoverModal1").mouseout(function(){
-    $("#hoverModal1").css("transform", "scale(1)");
-})
+hover1.addEventListener("mouseover", function(){
+     hover1.classList.add('wobble-hor-bottom') ;
+});
 
-
-$("#hoverModal2").mouseover(function(){
-    $("#hoverModal2").css("transform", "scale(1.1)");
-})
-$("#hoverModal2").mouseout(function(){
-    $("#hoverModal2").css("transform", "scale(1)");
-})
+hover1.addEventListener('mouseout', function(){
+    hover1.classList.remove('wobble-hor-bottom');
+});
 
 
-$("#hoverModal3").mouseover(function(){
-    $("#hoverModal3").css("transform", "scale(1.1)");
 
-})
-$("#hoverModal3").mouseout(function(){
-    $("#hoverModal3").css("transform", "scale(1)");
-})
+const hover2 = document.querySelector("#hoverModal2")
+console.log(hover2)
 
+hover2.addEventListener("mouseover", function(){
+     hover2.classList.add('wobble-hor-bottom') ;
+});
 
-$("#hoverModal4").mouseover(function(){
-    $("#hoverModal4").css("background", "black");
-
-})
-$("#hoverModal4").mouseout(function(){
-    $("#hoverModal4").css("background", "none");
-})
+hover2.addEventListener('mouseout', function(){
+    hover2.classList.remove('wobble-hor-bottom');
+});
 
 
-$("#hoverModal5").mouseover(function(){
-    $("#hoverModal5").classList.add("flip-2-hor-top-1");
+const hover3 = document.querySelector("#hoverModal3")
+console.log(hover3)
 
-})
-$("#hoverModal5").mouseout(function(){
-    $("#hoverModal5").classList.remove("flip-2-hor-top-1");
-})
+hover3.addEventListener("mouseover", function(){
+     hover3.classList.add('wobble-hor-bottom') ;
+});
+
+hover3.addEventListener('mouseout', function(){
+    hover3.classList.remove('wobble-hor-bottom');
+});
+
+
+const hover4 = document.querySelector("#hoverModal4")
+console.log(hover4)
+
+hover4.addEventListener("mouseover", function(){
+     hover4.classList.add('wobble-hor-bottom') ;
+});
+
+hover4.addEventListener('mouseout', function(){
+    hover4.classList.remove('wobble-hor-bottom');
+});
+
+
+
+let hover5 = document.querySelector("#hoverModal5")
+console.log(hover5)
+
+hover5.addEventListener("mouseover", () => {
+     hover5.classList.add('wobble-hor-bottom') ;
+});
+
+hover5.addEventListener('mouseout', () => {
+    hover5.classList.remove('wobble-hor-bottom');
+});
+
 
 // pas bon au dessus mais y'a peut etre un truc ( mettre un if ? peut etre ) ( je pars juste apres ) 
 
