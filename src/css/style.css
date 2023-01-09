@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #preloader {
   position: fixed;
   inset: 0px;
@@ -126,6 +127,7 @@ canvas {
 
 body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .hrStyle {
@@ -178,6 +180,36 @@ body {
 .barking {
   padding: 0;
   margin: 0;
+}
+
+#myBtn {
+  display: none; /* Masque le bouton par défaut */
+  position: fixed; /* Positionne le bouton en haut à droite de l'écran */
+  top: 1.5vw;
+  left: 1.5vw;
+  z-index: 99; /* Assure que le bouton reste au-dessus des autres éléments */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: rgba(117, 4, 4, 0.7529411765);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-shrink {
+  position: absolute;
+  position: fixed;
+  height: 8%;
+  background-color: #868282;
+}
+
+#mainNav.navbar-shrink .navbar-color {
+  color: rgba(7, 7, 7, 0.6431372549);
 }
 
 .letter {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="w-full h-full">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -25,11 +25,10 @@
     load automatiquement ( comme particle js finalement j'ai l'impression ) -->
 </head>
 
+<body class="">
 
-
-<body class="h-full w-full">
     <div id="particles-js"></div>
-    <header>
+    <!-- <header>
         <div id="preloader">
             <div id="status">
                 <h1 class="ml5">
@@ -42,16 +41,24 @@
                 </h1>
             </div>
         </div>
-    </header>
+    </header> -->
+    
+<div id="myBtn" class="bg-none">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+      </svg>
+      
+</div>
 
 
     <section class="header  flex flex-col text-center justify-between" id="header">
+
         <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded">
-            <div class="container flex flex-wrap items-center  justify-around mx-auto py-4 ">
+            <div class="container flex flex-wrap items-center  justify-around mx-auto py-4" id="mainNav">
                 <a href="#" class="flex items-center football">
                     <!-- Changer couleur nom  -->
                     <span
-                        class=" block py-2 pl-3 pr-4 text-2xl text-red-400 hover:underline hover:text-red-600 opacity-30 letter md:hover:bg-transparent md:border-0 md:p-0 font-semibold">ENZO
+                        class=" block py-2 pl-3 pr-4 text-2xl text-red-500 hover:underline hover:text-red-600 opacity-30 letter md:hover:bg-transparent navbar-color md:border-0 md:p-0 font-semibold">ENZO
                         MARTINEZ
                     </span>
                 </a>
@@ -65,33 +72,33 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </button>
-                <div class="hidden w-full h-full md:block md:w-auto " id="navbar-default">
-                    <ul
-                        class="flex flex-col p-4 mt-4 border transitionOnClick border-gray-400 bg-[#232427] opacity-50 rounded-lg  md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold"
-                                aria-current="page">ACCUEIL</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2  pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">PORTFOLIO</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">FORMATION</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">CONTACT</a>
-                        </li>
-                    </ul>
+                    <div class="hidden w-full h-full md:block md:w-auto " id="navbar-default">
+                        <ul
+                            class="flex flex-col p-4 mt-4 border transitionOnClick border-gray-400 bg-[#232427] opacity-50 rounded-lg  md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color"
+                                    aria-current="page">ACCUEIL</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2  pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color">PORTFOLIO</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color">FORMATION</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color">CONTACT</a>
+                            </li>
+                        </ul>
 
-                </div>
+                    </div>
         </nav>
 
         <div class="text-white opacity-50" style="padding-bottom: 6vw;">
@@ -105,7 +112,7 @@
                     <div class="py-1 "></div>
                     a l'AFPA.
                     Je vous présente ci dessous mon porfolio et des exemples de mes<a href="#header"
-                        class="text-red-400 hover:underline hover:text-red-600"> travaux réalisés.</a>
+                        class="text-red-500 hover:underline hover:text-red-600"> travaux réalisés.</a>
 
                 </div>
             </div>
@@ -129,7 +136,6 @@
 
 
     <!-- Suite : -trouver maybe comemnt mettre particle js dans le fond
-                 -hover pour les modals ( onmouseenter en js imo atm c'est le meilleur bail )
                  -faire les modals ( qu'elles marche quoi  https://www.w3schools.com/howto/howto_css_modals.asp) -->
     <section class="">
         <div class="titreSectionPortfolio text flex justify-center p-10 text-5xl md:text-5xl lg:text-6xl">Portfolio
@@ -226,6 +232,7 @@
     <script src="src/js/loader.js"></script>
     <script src="src/js/particle.js"></script>
     <script src="src/js/modal.js"></script>
+    <script src="src/js/navbar.js"></script>
 
 
 </body>

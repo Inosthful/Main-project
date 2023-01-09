@@ -39,6 +39,7 @@ header.masthead p { font-weight: 300; }
 }
 body{
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .hrStyle{
@@ -92,6 +93,38 @@ body{
     margin: 0;
 }
 /////////////////////////////////////////  NAV + BURGER  //////////////////////////////////////////////////////
+#myBtn {
+    display: none; /* Masque le bouton par défaut */
+    position: fixed; /* Positionne le bouton en haut à droite de l'écran */
+    top: 1.5vw;
+    left: 1.5vw;
+    z-index: 99; /* Assure que le bouton reste au-dessus des autres éléments */
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #750404c0;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    color: rgb(0, 0, 0);
+  }
+
+
+.navbar-shrink{
+    position: absolute;
+    position: fixed;
+    height: 8%;
+    background-color: #868282;
+
+
+}
+#mainNav.navbar-shrink .navbar-color {
+    color: #070707a4;
+
+}
 
 
 .letter{
