@@ -15,13 +15,21 @@
     <!-- https://www.youtube.com/watch?v=m0fTjbFDrcw   PRELOADER -->
     <!-- https://codepen.io/kylehenwood/pen/yLzRyj    https://codepen.io/jimmie/pen/naWJrX     ANIMATION BOUTON -->
     <!-- bouton pour affiché les techs utilisés ?  -->
+    <!-- https://github.com/oddoculus/scrollreveal scroll reveal -->
+    <!-- https://threejs-journey.com/?c=p3# THREE JS tuto payant mais immense banger askip -->
+    <!-- https://docs.spline.design/ spline, 3d docs ( tester ) -->
+    <!-- voir la police du loader ( ca a mis poppins a cause du font family )  -->
+    <!-- Blog a ajouter / voir si il est bien et que genre il soit publiable en tant qu'exo ( voir pour qu'un 
+        random puisse l'utiliser et pas qu'il y ai besoin d'un serveur) -->
+    <!-- voir pour savoir comment faire en sorte qu'un random ne doivent pas a avoir a dl anime.js et que ca se
+    load automatiquement ( comme particle js finalement j'ai l'impression ) -->
 </head>
 
 
 
 <body class="h-full w-full">
     <div id="particles-js"></div>
-    <!-- <header>
+    <header>
         <div id="preloader">
             <div id="status">
                 <h1 class="ml5">
@@ -34,7 +42,7 @@
                 </h1>
             </div>
         </div>
-    </header> -->
+    </header>
 
 
     <section class="header  flex flex-col text-center justify-between" id="header">
@@ -124,56 +132,80 @@
                  -hover pour les modals ( onmouseenter en js imo atm c'est le meilleur bail )
                  -faire les modals ( qu'elles marche quoi  https://www.w3schools.com/howto/howto_css_modals.asp) -->
     <section class="">
-        <div class="titreSectionPortfolio text flex justify-center p-10 text-5xl md:text-5xl lg:text-6xl">Portfolio</div>
-        <div  class="container mx-auto px-4">
+        <div class="titreSectionPortfolio text flex justify-center p-10 text-5xl md:text-5xl lg:text-6xl">Portfolio
+        </div>
+        <div class="container mx-auto px-4">
             <!-- https://animista.net/play/entrances/slide-in-blurred animation pour les modals banger -->
             <div class=" flex justify-center">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10à">
-                    <div class="exo01 p-4">
-                    <img src="https://wallpaperaccess.com/full/17520.jpg" class="w-96" alt="">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
+
+                    <div class="exo01 p-4" id="hoverModal1">
+                        <img src="https://wallpaperaccess.com/full/17520.jpg" class="w-96" alt="">
                         <a href="" class=""></a>
                         <div class="descriptionModal1 flex justify-center py-3">
-                            <h4 class="text-[13px] font-semibold text-gray-900">Exercice ancien porfolio,espace + planete en 3d</h4> <br>
+                            <h4 class="text-[13px] font-semibold text-gray-900">Exercice ancien porfolio,espace +
+                                planete en 3d</h4> <br>
                         </div>
-                        <div class="flex justify-center text-gray-900"><h6 class="text-[12px]">tech : HTML5 / CSS3 / JS / Bootstrap</h6>
+                        <div class="flex justify-center text-gray-900">
+                            <h6 class="text-[12px]">tech : HTML5 / CSS3 / JS / Bootstrap</h6>
                         </div>
                     </div>
-                    <div class="exo02 p-4">
+
+                    <div class="exo02 p-4" id="hoverModal2">
                         <img src="https://wallpaperaccess.com/full/17520.jpg" class="w-96" alt="">
-                            <a href="" class=""></a>
-                            <div class="descriptionModal1 flex justify-center">
-                                <h4>Exercice ancien porfolio,espace + planete en 3d</h4> 
-                            </div>
+                        <a href="" class=""></a>
+                        <div class="descriptionModal1 flex justify-center py-3">
+                            <h4 class="text-[13px] font-semibold text-gray-900">Exercice ancien porfolio,espace +
+                                planete en 3d</h4> <br>
+                        </div>
+                        <div class="flex justify-center text-gray-900">
+                            <h6 class="text-[12px]">tech : HTML5 / CSS3 / JS / Bootstrap</h6>
+                        </div>
                     </div>
-                    <div class="exo03 p-4">
+
+                    <div class="exo03 p-4" id="hoverModal3">
                         <img src="https://wallpaperaccess.com/full/17520.jpg" class="w-96" alt="">
-                            <a href="" class=""></a>
-                            <div class="descriptionModal1 flex justify-center">
-                                <h4>Exercice ancien porfolio,espace + planete en 3d</h4> 
-                            </div>
+                        <a href="" class=""></a>
+                        <div class="descriptionModal1 flex justify-center py-3">
+                            <h4 class="text-[13px] font-semibold text-gray-900">Exercice ancien porfolio,espace +
+                                planete en 3d</h4> <br>
+                        </div>
+                        <div class="flex justify-center text-gray-900">
+                            <h6 class="text-[12px]">tech : HTML5 / CSS3 / JS / Bootstrap</h6>
+                        </div>
                     </div>
-                    <div class="exo04 p-4">
+
+                    <div class="exo04 p-4" id="hoverModal4">
                         <img src="https://wallpaperaccess.com/full/17520.jpg" class="w-96" alt="">
-                            <a href="" class=""></a>
-                            <div class="descriptionModal1 flex justify-center">
-                                <h4>Exercice ancien porfolio,espace + planete en 3d</h4> 
-                            </div>
+                        <a href="" class=""></a>
+                        <div class="descriptionModal1 flex justify-center py-3">
+                            <h4 class="text-[13px] font-semibold text-gray-900">Exercice ancien porfolio,espace +
+                                planete en 3d</h4> <br>
+                        </div>
+                        <div class="flex justify-center text-gray-900">
+                            <h6 class="text-[12px]">tech : HTML5 / CSS3 / JS / Bootstrap</h6>
+                        </div>
                     </div>
-                    <div class="exo05 p-4">
+
+                    <div class="exo05 p-4" id="hoverModal5">
                         <img src="https://wallpaperaccess.com/full/17520.jpg" class="w-96" alt="">
-                            <a href="" class=""></a>
-                            <div class="descriptionModal1 flex justify-center">
-                                <h4>Exercice ancien porfolio,espace + planete en 3d</h4> 
-                            </div>
+                        <a href="" class=""></a>
+                        <div class="descriptionModal1 flex justify-center py-3">
+                            <h4 class="text-[13px] font-semibold text-gray-900">Exercice ancien porfolio,espace +
+                                planete en 3d</h4> <br>
+                        </div>
+                        <div class="flex justify-center text-gray-900">
+                            <h6 class="text-[12px]">tech : HTML5 / CSS3 / JS / Bootstrap</h6>
+                        </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
 
 
     </section>
 
-    <section >fafa</section>
+    <section>fafa</section>
 
 
 
@@ -191,8 +223,9 @@
     <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
     <!-- <script src="src/js/anime.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <script src="src/js/loader.js"></script>
     <script src="src/js/particle.js"></script>
+    <script src="src/js/modal.js"></script>
 
 
 </body>
