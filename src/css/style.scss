@@ -304,21 +304,23 @@ body{
   }
   
 
-  .modal {
-    position: fixed; /* Sit on top of the page */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    top: 0; /* Position at the top */
-    left: 0; /* Position at the left */
-    background-color: rgba(0,0,0,0.8); /* Black background with transparency */
-    z-index: 9999; /* Sit on top of all other elements */
-  }
+.modal {
+    display: none;
+  position: fixed; /* Sit on top of the page */
+  width: 300%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left */
+  background-color: rgba(179, 175, 175, 0.8); /* Black background with transparency */
+  z-index:1; /* Sit on top of all other elements */
+}
   
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
+    z-index: 1000;
     border: 1px solid #888;
     width: 100%; /* Could be more or less, depending on screen size */
   }
