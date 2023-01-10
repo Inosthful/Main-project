@@ -19,38 +19,14 @@
 
 
 // Lorsque l'utilisateur fait défiler la page, exécutez la fonction
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   // Si la position verticale de la page est supérieure à 20px, affichez le bouton
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("myBtn").style.display = "block";
-//   } else {
-//     document.getElementById("myBtn").style.display = "none";
-//   }
-// }
-
-// // Lorsque l'utilisateur clique sur le bouton, exécutez la fonction
-// document.getElementById("myBtn").addEventListener("click", function() {
-//   // Retourne en haut de la page en utilisant l'animation smooth scroll
-//   document.body.scrollTop = 0; // Pour Safari
-//   document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
-// });
-
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   // Si la position verticale de la page est supérieure à 20px, affichez le bouton
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-
-    mainNav.classList.add('navbar-shrink');
-    mainNav.classList.add('navbar-color')
-    mainNav.style.size = "13px"
-    // maybe padding jsp sahmais la collé en haut et la reduire
+    document.getElementById("myBtn").style.display = "block";
   } else {
-
-    mainNav.classList.remove('navbar-shrink');
-    mainNav.classList.remove('navbar-color')
+    document.getElementById("myBtn").style.display = "none";
   }
 }
 
@@ -60,4 +36,31 @@ document.getElementById("myBtn").addEventListener("click", function() {
   document.body.scrollTop = 0; // Pour Safari
   document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
 });
+
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   // Si la position verticale de la page est supérieure à 20px, affichez le bouton
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+//     mainNav.classList.add('navbar-shrink');
+//     mainNav.classList.add('navbar-color')
+
+
+//     // maybe padding jsp sahmais la collé en haut et la reduire
+//   } else {
+
+//     mainNav.classList.remove('navbar-shrink');
+//     mainNav.classList.remove('navbar-color')
+
+
+//   }
+// }
+
+// // Lorsque l'utilisateur clique sur le bouton, exécutez la fonction
+// document.getElementById("myBtn").addEventListener("click", function() {
+//   // Retourne en haut de la page en utilisant l'animation smooth scroll
+//   document.body.scrollTop = 0; // Pour Safari
+//   document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+// });
 

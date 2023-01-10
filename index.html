@@ -58,7 +58,7 @@
                 <a href="#" class="flex items-center football">
                     <!-- Changer couleur nom  -->
                     <span
-                        class=" block py-2 pl-3 pr-4 text-2xl text-red-500 hover:underline hover:text-red-600 opacity-30 letter md:hover:bg-transparent navbar-color md:border-0 md:p-0 font-semibold">ENZO
+                        class=" block py-2 pl-3 pr-4 text-2xl text-red-500 hover:underline hover:text-red-600 opacity-30 letter md:hover:bg-transparent  md:border-0 md:p-0 font-semibold">ENZO
                         MARTINEZ
                     </span>
                 </a>
@@ -77,24 +77,24 @@
                             class="flex flex-col p-4 mt-4 border transitionOnClick border-gray-400 bg-[#232427] opacity-50 rounded-lg  md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                             <li>
                                 <a href="#"
-                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color"
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold"
                                     aria-current="page">ACCUEIL</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block py-2  pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color">ABOUT</a>
+                                    class="block py-2  pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">ABOUT</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color">PORTFOLIO</a>
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">PORTFOLIO</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color">FORMATION</a>
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">FORMATION</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold navbar-color">CONTACT</a>
+                                    class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">CONTACT</a>
                             </li>
                         </ul>
 
@@ -138,12 +138,18 @@
     <!-- Suite : -trouver maybe comemnt mettre particle js dans le fond
                  -faire les modals ( qu'elles marche quoi  https://www.w3schools.com/howto/howto_css_modals.asp) -->
     <section class="">
-        <div class="titreSectionPortfolio text flex justify-center p-10 text-5xl md:text-5xl lg:text-6xl">Portfolio
+        <div class="titreSectionPortfolio text flex justify-center pt-10 text-5xl md:text-5xl lg:text-6xl">Portfolio
         </div>
+        <div class="flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hrStyleModal">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+          </svg>
+        </div>
+          
         <div class="container mx-auto px-4">
             <!-- https://animista.net/play/entrances/slide-in-blurred animation pour les modals banger -->
             <div class=" flex justify-center">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-10 pt-3">
 
                     <div class="exo01 p-4" id="hoverModal1">
                         <img src="https://wallpaperaccess.com/full/17520.jpg" class="w-96" alt="">
@@ -229,10 +235,12 @@
     <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
     <!-- <script src="src/js/anime.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="src/js/loader.js"></script>
     <script src="src/js/particle.js"></script>
     <script src="src/js/modal.js"></script>
     <script src="src/js/navbar.js"></script>
+    <script src="src/js/scrollReveal.js"></script>
 
 
 </body>

@@ -112,21 +112,6 @@ body{
     color: rgb(0, 0, 0);
   }
 
-
-.navbar-shrink{
-    position: absolute;
-    position: fixed;
-    height: 8%;
-    background-color: #868282;
-
-
-}
-#mainNav.navbar-shrink .navbar-color {
-    color: #070707a4;
-
-}
-
-
 .letter{
     letter-spacing: 1.5px;
 }
@@ -233,6 +218,14 @@ body{
 
 
 
+.titreSectionPortfolio{
+    color: rgb(165, 14, 14);
+}
+
+.hrStyleModal{
+    height: 5rem;
+    color: #7a7d80;
+}
 .wobble-hor-bottom {
 
 	-webkit-animation: wobble-hor-bottom 0.8s both;
