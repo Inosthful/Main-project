@@ -1,63 +1,63 @@
-const hover1 = document.querySelector("#hoverModal1")
-console.log(hover1)
+// const hover1 = document.querySelector("#hoverModal1")
+// console.log(hover1)
 
-hover1.addEventListener("mouseover", function(){
-     hover1.classList.add('wobble-hor-bottom') ;
-});
+// hover1.addEventListener("mouseover", function(){
+//      hover1.classList.add('wobble-hor-bottom') ;
+// });
 
-hover1.addEventListener('mouseout', function(){
-    hover1.classList.remove('wobble-hor-bottom');
-});
-
-
-
-const hover2 = document.querySelector("#hoverModal2")
-console.log(hover2)
-
-hover2.addEventListener("mouseover", function(){
-     hover2.classList.add('wobble-hor-bottom') ;
-});
-
-hover2.addEventListener('mouseout', function(){
-    hover2.classList.remove('wobble-hor-bottom');
-});
-
-
-const hover3 = document.querySelector("#hoverModal3")
-console.log(hover3)
-
-hover3.addEventListener("mouseover", function(){
-     hover3.classList.add('wobble-hor-bottom') ;
-});
-
-hover3.addEventListener('mouseout', function(){
-    hover3.classList.remove('wobble-hor-bottom');
-});
-
-
-const hover4 = document.querySelector("#hoverModal4")
-console.log(hover4)
-
-hover4.addEventListener("mouseover", function(){
-     hover4.classList.add('wobble-hor-bottom') ;
-});
-
-hover4.addEventListener('mouseout', function(){
-    hover4.classList.remove('wobble-hor-bottom');
-});
+// hover1.addEventListener('mouseout', function(){
+//     hover1.classList.remove('wobble-hor-bottom');
+// });
 
 
 
-let hover5 = document.querySelector("#hoverModal5")
-console.log(hover5)
+// const hover2 = document.querySelector("#hoverModal2")
+// console.log(hover2)
 
-hover5.addEventListener("mouseover", () => {
-     hover5.classList.add('wobble-hor-bottom') ;
-});
+// hover2.addEventListener("mouseover", function(){
+//      hover2.classList.add('wobble-hor-bottom') ;
+// });
 
-hover5.addEventListener('mouseout', () => {
-    hover5.classList.remove('wobble-hor-bottom');
-});
+// hover2.addEventListener('mouseout', function(){
+//     hover2.classList.remove('wobble-hor-bottom');
+// });
+
+
+// const hover3 = document.querySelector("#hoverModal3")
+// console.log(hover3)
+
+// hover3.addEventListener("mouseover", function(){
+//      hover3.classList.add('wobble-hor-bottom') ;
+// });
+
+// hover3.addEventListener('mouseout', function(){
+//     hover3.classList.remove('wobble-hor-bottom');
+// });
+
+
+// const hover4 = document.querySelector("#hoverModal4")
+// console.log(hover4)
+
+// hover4.addEventListener("mouseover", function(){
+//      hover4.classList.add('wobble-hor-bottom') ;
+// });
+
+// hover4.addEventListener('mouseout', function(){
+//     hover4.classList.remove('wobble-hor-bottom');
+// });
+
+
+
+// let hover5 = document.querySelector("#hoverModal5")
+// console.log(hover5)
+
+// hover5.addEventListener("mouseover", () => {
+//      hover5.classList.add('wobble-hor-bottom') ;
+// });
+
+// hover5.addEventListener('mouseout', () => {
+//     hover5.classList.remove('wobble-hor-bottom');
+// });
 
 
 // pas bon au dessus mais y'a peut etre un truc ( mettre un if ? peut etre ) ( je pars juste apres ) 
@@ -89,12 +89,13 @@ hover5.addEventListener('mouseout', () => {
 
 // Get the modal
 let modal = document.getElementById("myModal");
-let btn = document.getElementById("myBtn1");
+// let btn = document.getElementById("myBtn1");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 let img = document.getElementById("myImg1");
 img.onclick = function(){
   modal.style.display = "block";
+//   window.style.overflow = "hidden"
 
 }
 
@@ -105,3 +106,9 @@ let span = document.getElementsByClassName("close1")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+window.onclick = function(event) {
+    if (event.span == modal) {
+      modal.style.display = "none";
+    }
+  }
