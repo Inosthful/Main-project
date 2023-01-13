@@ -104,11 +104,14 @@ let span = document.getElementsByClassName("close1")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  if(modal.style.display ="block"){
+    modal.style.display = "none";
+  }
+
 }
 
-window.onclick = function(event) {
-    if (event.span == modal) {
-      modal.style.display = "none";
-    }
-  }
+// window.onclick = function(event) {
+//     if (event.span == modal) {
+//       modal.style.display = "none";
+//     }
+//   }
