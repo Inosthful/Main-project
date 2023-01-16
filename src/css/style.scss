@@ -307,26 +307,28 @@ body{
   .modal {
     display: none; /* Hidden by default */
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    bottom :10%;
+    left: 25%;
+
     z-index: 1050;
-    width: 100%; /* Full width */
-    height:50%; /* Full height */
+    width: 50%; /* Full width */
+    height: 90%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(196, 196, 196, 0.829); /* Black w/ opacity */
   }
+
+  .fold{
+    display: none;
+  }
+  .unfold{
+    display: block;
+  }
   
   /* Modal Content/Box */
   .modal-content {
-    position: relative;
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
+    width: 30%;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
@@ -347,8 +349,43 @@ body{
   }
 
 
+@mixin imgModal(){
+    padding : 1.5rem;
+    width: 100%;
+    &:hover{
+        cursor: pointer;
+    }
+    }
+
+.imageModal1{
+    @include imgModal();
+}    
+
+@mixin textModal(){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    letter-spacing: 0.025rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
 
 
+.textModal1{
+    @include textModal();
+}
+
+.buttonModal{
+    width: 50%;
+    align-self: center;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+// Ok alors, faire les média query de la fenetre de modal ( quelques breakpoint suffisent sinon globalement ca suit. Et
+// surtout faire un mobile first donc changer la height de la modal pour partir du mobile first into media query plus au fur et a mesure
+// que ca grandit ( meme changer la width je crois )
 ///////////////////////////////////// SECTION CV //////////////////////////////////////////////////
 /// 
 

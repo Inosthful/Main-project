@@ -60,6 +60,8 @@
 // });
 
 
+
+
 // pas bon au dessus mais y'a peut etre un truc ( mettre un if ? peut etre ) ( je pars juste apres ) 
 
 
@@ -85,30 +87,123 @@
 //             animation.classList.add("fold")
 //         }, 1);
 
+// function navbar() {
+//     var mainNav = document.querySelector('#mainNav');
+//     if (mainNav.offsetTop < 100) {
+//         mainNav.classList.add('navbar-shrink');
+//     } else {
+//         mainNav.classList.remove('navbar-shrink');
+//     }
+// }
 
+// if (modal.classList.contains = "fold"){
+//   modal.classList.add('unfold')
+//   modal.classList.remove('fold')
+
+// }else if(modal.classList.contains = "unfold"){
+//   modal.classList.remove('unfold')
+//   modal.classList.add('fold')
+// }else{
+//   modal.classList.add("unfold")
+// }
 
 // Get the modal
 let modal = document.getElementById("myModal");
 // let btn = document.getElementById("myBtn1");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 let img = document.getElementById("myImg1");
-img.onclick = function(){
-  modal.style.display = "block";
-//   window.style.overflow = "hidden"
 
-}
-
-// Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close1")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  if(modal.style.display ="block"){
-    modal.style.display = "none";
-  }
 
-}
+// When the user clicks on <span> (x), close the modal
+
+// img.onclick = function(){
+//   if (modal.classList.contains = "fold"){
+//     modal.classList.add('unfold')
+//     modal.classList.remove('fold')
+  
+//   }
+
+//   else{
+//     modal.classList.add("unfold")
+//   }
+// }
+
+// span.onclick = function(){
+//   if(modal.classList.contains = "unfold"){
+//     modal.classList.remove('unfold')
+//     modal.classList.add('fold')
+//     console.log("spanonclick")
+//   }
+// }
+
+img.addEventListener("click", () => {
+  if (modal.classList.contains = "fold"){
+    modal.classList.add('unfold')
+    modal.classList.remove('fold')
+  
+  }
+  else{
+    modal.classList.add("unfold")
+  }
+})
+
+span.addEventListener("click", () =>{
+  if(modal.classList.contains = "unfold"){
+    setTimeout(() => {
+      modal.classList.remove('unfold')
+    }, 1);
+
+    setTimeout(() => {
+      modal.classList.add('fold')
+    }, 1);
+  }
+})
+
+// hover5.addEventListener("mouseover", () => {
+//      hover5.classList.add('wobble-hor-bottom') ;
+// });
+
+// hover5.addEventListener('mouseout', () => {
+//     hover5.classList.remove('wobble-hor-bottom');
+// });
+
+// span.onclick
+
+
+  //   if (modal.style.display == "none"){
+  //   img.onclick = function() {
+  //     modal.style.display = "block";
+  //     console.log("clickonimage")
+
+  // }
+  // }
+  // console.log(modal);
+  //   if(modal.style.display == "block"){
+
+       
+  //         // modal.style.height = "50%";
+  //         // modal.style.opacity = "1";
+  //       //   window.style.overflow = "hidden"
+        
+  //       }
+  //     }
+
+  
+
+
+
+
+  // modal.style.height = "0%";
+  // modal.style.opacity = "0";
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+
+
+
+// Get the <span> element that closes the modal
+
 
 // window.onclick = function(event) {
 //     if (event.span == modal) {
