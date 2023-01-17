@@ -48,3 +48,20 @@ sr.reveal('.exo05',{
     origin: "top"
 });
 
+
+
+
+// let slide = document.querySelector("#travaux");
+
+// let porte = document.querySelector("#porfolio");
+// // let animation = document.querySelector(".animationP");
+// slide.addEventListener("click", function(){
+//     slide.classList.add("animationP")
+//     porte.classList.add("animationP")
+// })
+
+// let travaux  = document.querySelector("#travaux")
+// travaux.addEventListener("click", () => {
+
+//     travaux.style.transition = "all 1.5s";
+// })

@@ -136,29 +136,69 @@ let span = document.getElementsByClassName("close1")[0];
 //     console.log("spanonclick")
 //   }
 // }
+// probleme = document qui se fait clicker en boucle dessus 
 
+console.log(img)
 img.addEventListener("click", () => {
-  if (modal.classList.contains = "fold"){
-    modal.classList.add('unfold')
-    modal.classList.remove('fold')
-  
-  }
-  else{
-    modal.classList.add("unfold")
-  }
-})
+  if (modal.classList.contains("fold")){
+    modal.classList.remove('fold');
+    modal.classList.add('unfold');
 
-span.addEventListener("click", () =>{
-  if(modal.classList.contains = "unfold"){
-    setTimeout(() => {
-      modal.classList.remove('unfold')
-    }, 1);
-
-    setTimeout(() => {
-      modal.classList.add('fold')
-    }, 1);
+  } else{
+    modal.classList.add("unfold");
   }
-})
+  console.log(img)
+});
+
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.modal')|| modal.classList.contains("fold")) {
+      modal.classList.remove("unfold");
+      modal.classList.add("fold");
+  }
+});
+
+span.addEventListener("click", () => {
+  modal.classList.remove("unfold");
+  modal.classList.add("fold");
+});
+
+
+
+// img.addEventListener("click", () => {
+//   if (modal.classList.contains = "fold"){
+//     modal.classList.add('unfold')
+//     modal.classList.remove('fold')
+
+//   }
+//   else{
+//     modal.classList.add("unfold")
+//   }
+// })
+
+// document.addEventListener('click', () =>{
+//   if (modal.classList.contains == "unfold") {
+//     setTimeout(() => {
+//       modal.classList.remove('unfold')
+//     }, 1);
+//     setTimeout(() => {
+//       modal.classList.add('fold')
+//     }, 1);
+//     }
+// })
+
+// span.addEventListener("click", () =>{
+//   if(modal.classList.contains = "unfold"){
+//     setTimeout(() => {
+//       modal.classList.remove('unfold')
+//     }, 1);
+
+//     setTimeout(() => {
+//       modal.classList.add('fold')
+//     }, 1);
+//   }
+// })
+
+
 
 // hover5.addEventListener("mouseover", () => {
 //      hover5.classList.add('wobble-hor-bottom') ;
