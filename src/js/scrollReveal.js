@@ -65,3 +65,5 @@ sr.reveal('.exo05',{
 
 //     travaux.style.transition = "all 1.5s";
 // })
+
+//  https://www.youtube.com/watch?v=y9nlfqT4s9s SCROLL SMOOTH ICONE CLICK
