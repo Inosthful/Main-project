@@ -41,46 +41,40 @@
 
 
 
-
-
-
-
 // set the modal menu element
-// const $targetEl = document.getElementById('myModal');
+const $targetEl = document.getElementById('myModal');
 
-// // options with default values
-// const options = {
-//   placement: 'center',
-//   backdrop: 'dynamic',
-//   backdropClasses: 'bg-gray-900 bg-opacity-30 dark:bg-opacity-80 fixed inset-0 z-40',
-//   onHide: () => {
-//       console.log('modal is hidden');
-//   },
-//   onShow: () => {
-//       console.log('modal is shown');
-//   },
-//   onToggle: () => {
-//       console.log('modal has been toggled');
-//   }
-// };
+// options with default values
+const options = {
+  placement: 'center',
+  backdrop: 'dynamic',
+  backdropClasses: 'bg-gray-900 bg-opacity-30 dark:bg-opacity-80 fixed inset-0 z-40',
+  onHide: () => {
+      console.log('modal is hidden');
+  },
+  onShow: () => {
+      console.log('modal is shown');
+  },
+  onToggle: () => {
+      console.log('modal has been toggled');
+  }
+};
 
-// import { Flowbite } from 'flowbite';
-
+import { Flowbite } from 'flowbite';
 /*
 * $targetEl: required
 * options: optional
 */
-// const modal = new Flowbite.Modal($targetEl, options);
-
-
-
-
-
-
-
-
+const modal = new Flowbite.Modal($targetEl, options);
 
 // La mienne en bas 
+
+
+
+
+
+
+
 
 // img.addEventListener("click", () => {
 //   if (modal.classList.contains = "fold"){
