@@ -48,7 +48,19 @@ sr.reveal('.exo05',{
     origin: "top"
 });
 
+sr.reveal('.cvTitle',{
+    delay: 350,
+    duration: 2000,
+    distance: "500px",
+    origin: "left"
+})
 
+sr.reveal('.cvButton',{
+    delay: 400,
+    duration: 2000,
+    distance: "500px",
+    origin: "left"
+})
 
 
 // let slide = document.querySelector("#travaux");

@@ -3,9 +3,7 @@
 // // Get the modal
 // let modal = document.getElementById("myModal");
 // // // let btn = document.getElementById("myBtn1");
-// // let img = document.getElementById("myImg1");
 
-// let span = document.getElementsByClassName("close1")[0];
 
 // console.log(img)
 // img.addEventListener("click", () => {
@@ -40,42 +38,59 @@
 // })
 
 
+// let img1 = document.getElementById("myImg1");
 
-// set the modal menu element
-const $targetEl = document.getElementById('myModal');
+// let span = document.getElementsByClassName("close1")[0];
+// // set the modal menu element
+// const $targetEl = document.getElementById('myModal');
 
-// options with default values
-const options = {
-  placement: 'center',
-  backdrop: 'dynamic',
-  backdropClasses: 'bg-gray-900 bg-opacity-30 dark:bg-opacity-80 fixed inset-0 z-40',
-  onHide: () => {
-      console.log('modal is hidden');
-  },
-  onShow: () => {
-      console.log('modal is shown');
-  },
-  onToggle: () => {
-      console.log('modal has been toggled');
-  }
-};
+// // options with default values
+// const options = {
+//   placement: 'top',
+//   backdrop: 'dynamic',
+//   backdropClasses: 'bg-gray-900',
+//   closable: true,
+//   onHide: () => {
+//       console.log('modal is hidden');
+//   },
+//   onShow: () => {
+//       console.log('modal is shown');
+//   },
+//   onToggle: () => {
+//       console.log('modal has been toggled');
+//   }
+// };
 
-import { Flowbite } from 'flowbite';
-/*
-* $targetEl: required
-* options: optional
-*/
-const modal = new Flowbite.Modal($targetEl, options);
+// /*
+// * $targetEl: required
+// * options: optional
+// */
+
+
+
+// img1.addEventListener("click", ()=>{
+//     if (modal.isHidden()){
+//         $targetEl.classList.add('animation1')
+//             modal.show(); 
+
+
+//     }
+// } ) 
+
+// span.addEventListener('click', ()=>{
+//     if (modal.isVisible()){
+//         modal.hide();
+//     }
+// })
+
+// const modal = new Modal($targetEl, options);
+
+
+
+
+
 
 // La mienne en bas 
-
-
-
-
-
-
-
-
 // img.addEventListener("click", () => {
 //   if (modal.classList.contains = "fold"){
 //     modal.classList.add('unfold')
