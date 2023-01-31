@@ -1,21 +1,10 @@
-Uncaught SyntaxError: Cannot use import statement outside a module" est un message d'erreur qui signifie que vous avez utilisé l'instruction "import" dans un environnement qui ne prend pas en charge les modules ECMAScript.
+SUITE :
+Modal TFOU3LIK 
 
-Il y a plusieurs raisons pour lesquelles vous pourriez recevoir cette erreur :
-
-Vous exécutez votre script JavaScript dans un navigateur qui ne prend pas en charge les modules ECMAScript. Les navigateurs modernes prennent en charge les modules ECMAScript, mais certains navigateurs plus anciens ne le font pas.
-
-Vous avez oublié de configurer votre environnement de développement pour utiliser un outil de transpilation tel que Babel pour convertir votre code en une version compatible avec les navigateurs.
-
-Vous exécutez directement votre fichier javascript qui utilise import dans un environnement qui ne supporte pas les modules ECMAScript tels que nodeJS qui doit utiliser la commande require pour importer les modules.
-
-Pour résoudre cette erreur, vous pouvez :
-
-Utiliser un navigateur qui prend en charge les modules ECMAScript.
-Utiliser un outil de transpilation pour convertir votre code en une version compatible avec les navigateurs.
-Utiliser la commande require pour importer les modules dans nodeJS.
-Au cas où vous voulez utiliser import dans un script javascript qui s'exécute coté client, vous pouvez utiliser un outil de transpilation comme Babel pour convertir votre code en une version compatible avec les navigateurs.
+pour la suite 
+" image preview on link hover " a la place des modals
+ finir cette section de merde
 
 
-en gros pour faire un nouveau objet de modal il faut utiliser import venant de flowbite
-sauf que pour use import je dois avoir un truc qui le comprend
-DONC je dois voir avec chat gpt ce que je dois faire pour que ca marche sa grand mere
+ bouton cv -> faire cv en html css maybe ? ou juste rediriger sur un pdf ou quoi 
+ 
