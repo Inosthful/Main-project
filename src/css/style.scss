@@ -243,103 +243,25 @@ body{
 }
 
 
-
-
-.animation1{
- animation: modalFromTop 1s ease-in-out
-}
-  
-@keyframes modalFromTop {
-    0% {
-
-        transform: translateY(-500px);
-    }
-
-    100% {
-
-        transform: translateY(0px);
-    }
+@mixin  indexModal(){
+    z-index: 9999;
 }
 
-
-  /* Modal Content/Box */
-  .modal-content {
-    display: -ms-flexbox;
-    width: 30%;
-    pointer-events: auto;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 0.3rem;
-    outline: 0;
-  }
-
-
-@mixin close(){
-        color: rgb(0, 0, 0);
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        &:hover,:focus{
-            color: rgb(150, 9, 9);
-            text-decoration: none;
-            cursor: pointer;
-        }
-      }    
-
-      .close1 {
-        @include close();
-      }
-      .close2{
-        @include close();
-      }
-      .close3 {
-        @include close();
-      }
-      .close4 {
-        @include close();
-      }
-      .close5 {
-        @include close();
-      }
-
-@mixin imgModal(){
-    padding : 1.5rem;
-    width: 100%;
-    &:hover{
-        cursor: pointer;
-    }
-    }
-
-.imageModal1{
-    @include imgModal();
-}    
-
-@mixin textModal(){
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 1rem;
-    letter-spacing: 0.025rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+.exo01{
+    @include indexModal();
 }
-
-
-.textModal1{
-    @include textModal();
+.exo02{
+    @include indexModal();
 }
-
-.buttonModal{
-    width: 50%;
-    align-self: center;
-    padding-right: 1rem;
-    margin-top: 1rem;
+.exo03{
+    @include indexModal();
 }
-
-// Ok alors, faire les média query de la fenetre de modal ( quelques breakpoint suffisent sinon globalement ca suit. Et
-// surtout faire un mobile first donc changer la height de la modal pour partir du mobile first into media query plus au fur et a mesure
-// que ca grandit ( meme changer la width je crois )
+.exo04{
+    @include indexModal();
+}
+.exo05{
+    @include indexModal();
+}
 ///////////////////////////////////// SECTION CV //////////////////////////////////////////////////
 /// 
 
