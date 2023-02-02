@@ -7,7 +7,12 @@ sr.reveal('.titreSectionPortfolio',{
     distance: "65px",
     origin: "left"
 })
-
+sr.reveal('.actual',{
+    delay: 150,
+    duration: 2000,
+    distance: "45px",
+    origin: "left"
+})
 sr.reveal('.iconModal',{
     delay: 100,
     duration: 2000,
@@ -38,13 +43,13 @@ sr.reveal('.exo03',{
 sr.reveal('.exo04',{
     delay: 800,
     duration: 2000,
-    distance: "50px",
+    distance: "30px",
     origin: "top"
 });
 sr.reveal('.exo05',{
     delay: 1000,
     duration: 2000,
-    distance: "50px",
+    distance: "30px",
     origin: "top"
 });
 

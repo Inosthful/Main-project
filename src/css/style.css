@@ -279,6 +279,10 @@ body {
   color: rgb(165, 14, 14);
 }
 
+.actual {
+  color: rgba(35, 36, 39, 0.7882352941);
+}
+
 .hrStyleModal {
   height: 5rem;
   color: #7a7d80;
