@@ -275,6 +275,19 @@ body {
     opacity: 1;
   }
 }
+.hoverImage:hover {
+  animation: hoverImage 1.5;
+}
+
+@keyframes hoverImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.669);
+    opacity: 1;
+  }
+}
 .titreSectionPortfolio {
   color: rgb(165, 14, 14);
 }
