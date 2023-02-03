@@ -112,7 +112,7 @@ canvas {
 #particles-js, #particles-js2 {
   position: absolute;
   width: 100%;
-  height: 1000vw;
+  height: 100%;
   background-color: #232427;
   background-image: url("");
   background-repeat: no-repeat;
@@ -177,11 +177,73 @@ body {
     margin-left: 48.2vw;
   }
 }
-.barking {
-  padding: 0;
-  margin: 0;
+.wrapper {
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
 }
 
+.typing {
+  width: 80vw;
+  font-size: medium;
+  animation: typing 2s steps(100);
+  white-space: nowrap;
+  overflow: hidden;
+  animation-delay: 4.65s;
+}
+@media screen and (min-width: 1020px) {
+  .typing {
+    width: 97vw;
+    animation: typing 2s steps(100);
+    animation-delay: 4.65s;
+  }
+  @keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 70%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .typing {
+    width: 98vw;
+    animation-delay: 4.65s;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+.hideAnimation {
+  animation: hideAnimationkey 8.5s;
+}
+
+@keyframes hideAnimationkey {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #myBtn {
   display: none; /* Masque le bouton par défaut */
   position: fixed; /* Positionne le bouton en haut à droite de l'écran */
@@ -245,8 +307,8 @@ body {
 }
 
 .football {
-  animation-delay: 6s;
   animation: footballAnim 2s;
+  animation-delay: 4.65s;
 }
 
 @keyframes transitiononclick2 {

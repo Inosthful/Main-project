@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.css" rel="stylesheet"> 
+    <link href="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.css"
+        rel="stylesheet">
     <!-- MiniPreview stuff here -->
 
     <title>Document</title>
@@ -30,9 +31,9 @@
 </head>
 <!--  -->
 
-<body class="">
+<body class="test1">
+<div id="particles-js"></div>
 
-    <div id="particles-js"></div>
     <!-- <header>
         <div id="preloader">
             <div id="status">
@@ -106,13 +107,19 @@
 
         <div class="text-white opacity-50" style="padding-bottom: 6vw;">
             <div class="">
-                <div class="text-1 text-2xl letters md:text-3xl lg:text-5xl pb-7">
+                <div class="wrapper">
+                <div class="text-1 letters md:text-3xl lg:text-5xl pb-7 typing">
                     Tout d'abord, laissez moi me présenter.
                 </div>
+            </div>
+                <h1>
+            </h1>
                 <hr class="hrStyle">
-                <div class="text-2 text-xs letters md:text-2xs lg:text-sm pt-7">
+                <div class="text-2 text-xs letters md:text-2xs lg:text-sm pt-7 hideAnimation">
+                    <div class="">
                     Mon nom est Enzo Martinez, j'ai 19 ans et je suis étudiant en tant que Développeur Web et Web Mobile
-                    <div class="py-1 "></div>
+                </div>
+                    <div class="py-1"></div>
                     a l'AFPA.
                     Je vous présente ci-dessous mon porfolio et des exemples de mes<a href="#portflio"
                         class="text-red-500 hover:underline hover:text-red-600" id="travaux"> travaux réalisés.</a>
@@ -149,47 +156,51 @@
         <div class="text-center flex justify-center actual text-2xl pb-5">Projets actuels :</div>
         <div class="container mx-auto px-4 flex justify-center">
             <!-- https://animista.net/play/entrances/slide-in-blurred animation pour les modals banger -->
-            
+
             <div class="">
-            <div class="grid grid-cols-1 md:grid-cols-3 pb-10 pt-3">
- 
-                <div class="exo01">
-                    <div class="p-5">
+                <div class="grid grid-cols-1 md:grid-cols-3 pb-10 pt-3">
 
-                        <a class="block text-white flex justify-center">
-                            <img src="src/images/index_planete.png" class="w-96" alt="">
+                    <div class="exo01">
+                        <div class="p-5">
 
-                        </a>
-                        <div  class="descriptionModal1 flex justify-center py-3 ">
-                            <h4 id="p1" class="text-[13px] font-semibold text-gray-900">
+                            <a class="block text-white flex justify-center">
+                                <img src="src/images/index_planete.png" class="w-96" alt="">
 
-                                <a  class="text-red-700 hover:text-red-800 underline" href="https://inosthful.github.io/Projet-Planete/">Page de présentation</a> pour le projet
-                                planete en 3d
-                            </h4> <br>
+                            </a>
+                            <div class="descriptionModal1 flex justify-center py-3 ">
+                                <h4 id="p1" class="text-[13px] font-semibold text-gray-900">
 
-                        </div>
-                        <div class="flex justify-center text-gray-900">
-                            <h6 class="text-[12px]">tech : HTML / SCSS/CSS / JS / Bootstrap</h6>
+                                    <a class="text-red-700 hover:text-red-800 underline"
+                                        href="https://inosthful.github.io/Projet-Planete/">Page de présentation</a> pour
+                                    le projet
+                                    planete en 3d
+                                </h4> <br>
+
+                            </div>
+                            <div class="flex justify-center text-gray-900">
+                                <h6 class="text-[12px]">tech : HTML / SCSS/CSS / JS / Bootstrap</h6>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    
+
                     <div class="exo02">
-                            <div class="p-5">
-                                <a class="block text-white flex justify-center">
-                                    <img src="src/images/planetes.png" class="w-96" alt="">
+                        <div class="p-5">
+                            <a class="block text-white flex justify-center">
+                                <img src="src/images/planetes.png" class="w-96" alt="">
 
-                                </a>
-                                <div class="descriptionModal1 flex justify-center py-3">
-                                    <h4 id="p2" class="text-[13px] font-semibold text-gray-900" >
-                                        <a class="text-red-700 hover:text-red-800 underline" href="https://inosthful.github.io/Projet-Planete/planetes">Projet planete</a>  + futur redirection sur des objets 3d
-                                    </h4> <br>
-                                </div>
-                                <div class="flex justify-center text-gray-900">
-                                    <h6 class="text-[12px]">tech : HTML / CSS / JS / Bootstrap</h6>
-                                </div>
-                            </div>          
-                                            <!-- <p class="textModal1 w-full"><strong>Premier projet de porfolio :</strong>
+                            </a>
+                            <div class="descriptionModal1 flex justify-center py-3">
+                                <h4 id="p2" class="text-[13px] font-semibold text-gray-900">
+                                    <a class="text-red-700 hover:text-red-800 underline"
+                                        href="https://inosthful.github.io/Projet-Planete/planetes">Projet planete</a> +
+                                    futur redirection sur des objets 3d
+                                </h4> <br>
+                            </div>
+                            <div class="flex justify-center text-gray-900">
+                                <h6 class="text-[12px]">tech : HTML / CSS / JS / Bootstrap</h6>
+                            </div>
+                        </div>
+                        <!-- <p class="textModal1 w-full"><strong>Premier projet de porfolio :</strong>
                                                 <br>
                                                 Page d'accueil du porfolio totalement responsive<br>
                                                 Développé avec : <br>
@@ -198,36 +209,37 @@
                                                 Commencé le 16/11/2022.<br>
                                               
                                             </p> -->
-                                                        
-                        </div>
+
+                    </div>
                     <div class="exo03">
 
                         <div class="p-5">
-                            <a
-                                class="block text-white flex justify-center">
+                            <a class="block text-white flex justify-center">
                                 <img src="src/images/blog.png" class="w-96" alt="">
 
                             </a>
                             <div class="descriptionModal1 flex justify-center py-3">
-                                <h4 class="text-[13px] font-semibold text-gray-900"><a class="text-red-700 hover:text-red-800 underline" href="https://inosthful.github.io/Projet-Planete/planetes.html"> TP crud </a> a finir
+                                <h4 class="text-[13px] font-semibold text-gray-900"><a
+                                        class="text-red-700 hover:text-red-800 underline"
+                                        href="https://inosthful.github.io/Projet-Planete/planetes.html"> TP crud </a> a
+                                    finir
                                 </h4> <br>
                             </div>
                             <div class="flex justify-center text-gray-900">
                                 <h6 class="text-[12px]">tech : HTML CSS JS Bootstrap SQL PHPMyAdmin</h6>
                             </div>
                         </div>
-                
+
                     </div>
                 </div>
                 <div class="text-center flex justify-center actual text-2xl pb-5">Projets futurs :</div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 pb-10 pt-3">
+                <div class="grid grid-cols-1 md:grid-cols-3 pb-10 pt-3">
 
                     <div class="exo04">
 
                         <div class="p-5">
-                            <a
-                                class="block text-white flex justify-center">
+                            <a class="block text-white flex justify-center">
                                 <img src="src/images/logo karmine.jfif" class="w-96" alt="">
 
                             </a>
@@ -245,8 +257,7 @@
                     <div class="exo05">
 
                         <div class="p-5">
-                            <a
-                                class="block text-white flex justify-center">
+                            <a class="block text-white flex justify-center">
                                 <img src="https://wallpaperaccess.com/full/17520.jpg" class="w-96" alt="">
 
                             </a>
@@ -259,28 +270,33 @@
                             </div>
                         </div>
                     </div>
-            
+
                 </div>
             </div>
         </div>
     </section>
 
     <section class="flex justify-center items-center text-color text-center ">
+ 
         <div class="container flex justify-center flex-col cvTitle">
+                
             <div class="pt-32 pb-8 text-3xl">
                 Voici mon C.V !
             </div>
             <div class="text-box">
                 <a href="#CV" class="btn btn-white btn-animate cvButton">Cliquez ici</a>
             </div>
+            <div class="pt-16 mt-5">
+                © EM | 2023
+            </div>
+        </div>
         </div>
 
 
     </section>
+
     <!-- manque la redirection des boutons, les hovers des modals, styliser les modals-->
-    <!-- https://flowbite.com/docs/components/modal/ en vrai ? ( probleme marche toujours pas au click window + plus belle
-         + plus simple a mettre stylé ) USE CA SAH -->
-    <section class="pt-32">footer i guess ( tailwind tout les jours je peux le jurer ( flowbite ) </section>
+
 
 
 
@@ -302,6 +318,7 @@
     <script src="src/js/modal.js"></script>
     <script src="src/js/navbar.js"></script>
     <script src="src/js/scrollReveal.js"></script>
+
     <!-- Hover preview  -->
     <script src="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.js"></script>
 
