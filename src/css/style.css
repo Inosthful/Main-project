@@ -177,6 +177,14 @@ body {
     margin-left: 48.2vw;
   }
 }
+.sizeUp {
+  font-size: 15px;
+}
+
+.sizePres {
+  font-size: 0.6rem;
+}
+
 .wrapper {
   /*This part is important for centering*/
   display: grid;
@@ -185,7 +193,6 @@ body {
 
 .typing {
   width: 80vw;
-  font-size: medium;
   animation: typing 2s steps(100);
   white-space: nowrap;
   overflow: hidden;
