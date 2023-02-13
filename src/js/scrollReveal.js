@@ -84,3 +84,13 @@ sr.reveal('.cvButton',{
 // })
 
 //  https://www.youtube.com/watch?v=y9nlfqT4s9s SCROLL SMOOTH ICONE CLICK
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

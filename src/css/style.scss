@@ -20,6 +20,7 @@ header.masthead p { font-weight: 300; }
 @media (min-width: 1200px) {
   header.masthead h1 { font-size: 4rem; }
 }
+
 // npx sass --watch src/css/style.scss:src/css/style.css
 
 /* //////////////////////////////////   PARTICLE JS   ///////////////////////////////// */
@@ -252,7 +253,7 @@ body{
 }
 
 .football{
-
+  scroll-behavior: smooth;
     animation: footballAnim 2s ;
     animation-delay: 4.65s;
 
@@ -377,7 +378,7 @@ body{
 
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-decoration: none;
     padding: 7px 20px;
     display: inline-block;
@@ -444,6 +445,8 @@ body{
 
 
 //////////////////////////////////////////////// SECTION FOOTER BACKGROUND /////////////////////////////////////////////////////////////////////////////
+
+
 
 
 #Clouds {
@@ -889,4 +892,10 @@ body{
         background-image: linear-gradient( #232427 , #0b0707);
         // background-image: radial-gradient(circle, #370707 0%, #610303 75%, #cb1b1bb4 100%);
       }
+}
+
+
+
+.shad{
+  box-shadow: 0 3px 6px #0003;
 }

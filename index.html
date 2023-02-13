@@ -15,7 +15,7 @@
         rel="stylesheet">
     <!-- MiniPreview stuff here -->
 
-    <title>Document</title>
+    <title>MainProject</title>
 
     <!-- https://www.youtube.com/watch?v=m0fTjbFDrcw   PRELOADER -->
     <!-- https://codepen.io/kylehenwood/pen/yLzRyj    https://codepen.io/jimmie/pen/naWJrX     ANIMATION BOUTON -->
@@ -61,7 +61,7 @@
 
     <section class="header  flex flex-col text-center justify-between" id="header">
 
-        <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+        <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded" id="mainNav">
             <div class="container flex flex-wrap items-center  justify-around mx-auto py-4" id="mainNav">
                 <a href="#" class="flex items-center football">
                     <!-- Changer couleur nom  -->
@@ -84,18 +84,20 @@
                     <ul
                         class="flex flex-col p-4 mt-4 border transitionOnClick border-gray-400 bg-[#232427] opacity-50 rounded-lg  md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                         <li>
-                            <a href="#"
-                                class="block py-2  pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">PORTFOLIO</a>
+                            <a href="#portfolio"
+                                class="block py-2  pl-3 pr-4 football js-scroll-trigger couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">PORTFOLIO</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">CV</a>
+                            <a href="#CV"
+                                class="block py-2 pl-3 pr-4 football js-scroll-trigger couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">CV</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">INFOS
-                                SUPP</a>
+                            <a href="https://github.com/Inosthful/"
+                                class="block py-2 pl-3 pr-4 football js-scroll-trigger couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">MON GITHUB</a>
                         </li>
+                        <a href="mailto:inosthful@gmail.com"
+                        class="block py-2 pl-3 pr-4 football js-scroll-trigger couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold">ME JOINDRE</a>
+                </li>
                         <!-- <li>
                                 <a href="#"
                                     class="block py-2 pl-3 pr-4 football couleurTest letter md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 text-xs font-semibold"></a>
@@ -121,7 +123,7 @@
                 </div>
                     <div class="py-1"></div>
                     a l'AFPA.
-                    Je vous présente ci-dessous mon porfolio et des exemples de mes<a href="#portflio"
+                    Je vous présente ci-dessous mon porfolio et des exemples de mes<a href="#portfolio"
                         class="text-red-500 hover:underline hover:text-red-600" id="travaux"> travaux réalisés.</a>
 
                 </div>
@@ -144,8 +146,8 @@
 
     </section>
 
-    <section class=" bg-white" id="portflio">
-        <div class="titreSectionPortfolio text flex justify-center pt-10 text-5xl md:text-5xl lg:text-6xl">Portfolio
+    <section class=" bg-white">
+        <div class="titreSectionPortfolio text flex justify-center pt-10 text-5xl md:text-5xl lg:text-6xl" id="portfolio">Portfolio
         </div>
         <div class="flex justify-center iconModal">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -158,7 +160,7 @@
             <!-- https://animista.net/play/entrances/slide-in-blurred animation pour les modals banger -->
 
             <div class="">
-                <div class="grid grid-cols-1 md:grid-cols-3 pb-10 pt-3">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-10 pt-3">
 
                     <div class="exo01">
                         <div class="p-5">
@@ -167,7 +169,8 @@
                                 <img src="src/images/index_planete.png" class="w-96" alt="">
 
                             </a>
-                            <div class="descriptionModal1 flex justify-center py-3 ">
+                        
+                            <div class="descriptionModal1 flex justify-center py-3">
                                 <h4 id="p1" class="text-[13px] font-semibold text-gray-900">
 
                                     <a class="text-red-700 hover:text-red-800 underline"
@@ -180,15 +183,17 @@
                             <div class="flex justify-center text-gray-900">
                                 <h6 class="text-[12px]">tech : HTML / SCSS/CSS / JS / Bootstrap</h6>
                             </div>
-                        </div>
+                        
+                    </div>
                     </div>
 
-                    <div class="exo02">
+                    <div class="exo02" id="">
                         <div class="p-5">
                             <a class="block text-white flex justify-center">
-                                <img src="src/images/planetes.png" class="w-96" alt="">
+                                <img src="src/images/planetes.png" class="w-96 shad" alt="">
 
                             </a>
+                            
                             <div class="descriptionModal1 flex justify-center py-3">
                                 <h4 id="p2" class="text-[13px] font-semibold text-gray-900">
                                     <a class="text-red-700 hover:text-red-800 underline"
@@ -199,6 +204,7 @@
                             <div class="flex justify-center text-gray-900">
                                 <h6 class="text-[12px]">tech : HTML / CSS / JS / Bootstrap</h6>
                             </div>
+                           
                         </div>
                         <!-- <p class="textModal1 w-full"><strong>Premier projet de porfolio :</strong>
                                                 <br>
@@ -218,18 +224,19 @@
                                 <img src="src/images/blog.png" class="w-96" alt="">
 
                             </a>
+    
                             <div class="descriptionModal1 flex justify-center py-3">
                                 <h4 class="text-[13px] font-semibold text-gray-900"><a
                                         class="text-red-700 hover:text-red-800 underline"
-                                        href="https://inosthful.github.io/Projet-Planete/planetes.html"> TP crud </a> a
-                                    finir
+                                        href="https://inosthful.github.io/Projet-Planete/planetes.html"> TP crud </a> avec fonction login et logout quasi
+                                    fini
                                 </h4> <br>
                             </div>
                             <div class="flex justify-center text-gray-900">
                                 <h6 class="text-[12px]">tech : HTML CSS JS Bootstrap SQL PHPMyAdmin</h6>
                             </div>
                         </div>
-
+                        
                     </div>
                 </div>
                 <div class="text-center flex justify-center actual text-2xl pb-5">Projets futurs :</div>
@@ -277,7 +284,7 @@
     </section>
 
 
-    <section class="flex justify-center items-center text-color text-center -z-10 bgSection">
+    <section class="flex justify-center items-center text-color text-center -z-10 bgSection" id="CV">
 
         <div class="container flex justify-center flex-col cvTitle">
             <div id="Clouds">
@@ -308,8 +315,9 @@
                 Voici mon C.V !
             </div>
             <div class="text-box">
-                <a href="#CV" class="btn btn-white btn-animate cvButton z-50">Cliquez ici</a>
+                <a href="https://docdro.id/IKLBzP7" download="" target="_blank"  class="btn btn-white btn-animate cvButton z-50">Cliquez ici</a>
             </div>
+
             <div class="pt-16 mt-5">
                 © EM | 2023
             </div>
@@ -339,6 +347,8 @@
     <script src="src/js/modal.js"></script>
     <script src="src/js/navbar.js"></script>
     <script src="src/js/scrollReveal.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
 
     <!-- Hover preview  -->
     <script src="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.js"></script>
