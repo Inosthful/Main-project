@@ -120,11 +120,11 @@ body{
     animation: typing 2s steps(100), ;
     white-space: nowrap;
     overflow: hidden;
-    animation-delay: 4.65s;
+    animation-delay: 4.85s;
     @media screen and (min-width:1020px){
         width: 97vw;
         animation: typing 2s steps(100), ;
-        animation-delay: 4.65s;
+        animation-delay: 4.85s;
         @keyframes typing {
             from {
               width: 0%;
@@ -136,7 +136,7 @@ body{
     }
     @media screen and (min-width:1200px){
         width: 98vw;
-        animation-delay: 4.65s;
+        animation-delay: 4.85s;
         @keyframes typing {
             from {
               width: 0
