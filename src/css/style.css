@@ -128,8 +128,17 @@ canvas {
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  animation: scrollNone 4.1s;
 }
 
+@keyframes scrollNone {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: hidden;
+  }
+}
 .hrStyle {
   margin-left: 60vw;
   max-width: 75px;
@@ -196,13 +205,13 @@ body {
   animation: typing 2s steps(100);
   white-space: nowrap;
   overflow: hidden;
-  animation-delay: 4.85s;
+  animation-delay: 3.8s;
 }
 @media screen and (min-width: 1020px) {
   .typing {
     width: 97vw;
     animation: typing 2s steps(100);
-    animation-delay: 4.85s;
+    animation-delay: 3.8S;
   }
   @keyframes typing {
     from {
@@ -216,7 +225,7 @@ body {
 @media screen and (min-width: 1200px) {
   .typing {
     width: 98vw;
-    animation-delay: 4.85s;
+    animation-delay: 3.8s;
   }
   @keyframes typing {
     from {
@@ -237,7 +246,7 @@ body {
   }
 }
 .hideAnimation {
-  animation: hideAnimationkey 8.5s;
+  animation: hideAnimationkey 7.5s;
 }
 
 @keyframes hideAnimationkey {
@@ -316,7 +325,7 @@ body {
 .football {
   scroll-behavior: smooth;
   animation: footballAnim 2s;
-  animation-delay: 4.65s;
+  animation-delay: 3.7s;
 }
 
 @keyframes transitiononclick2 {
