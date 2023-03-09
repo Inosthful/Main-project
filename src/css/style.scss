@@ -316,26 +316,22 @@ body{
 }
 
 
-////////////////////////////////////// MODALS /////////////////////////////////////
+////////////////////////////////////// SECTION PORTFOLIO /////////////////////////////////////
 
 
+.shad{
 
-.hoverImage:hover {
-    animation: hoverImage 1.5;
+  border: solid 1px rgb(193, 191, 191);
+
+}
+
+.bd{
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 
-@keyframes hoverImage{
-    from{
-        opacity: 0;
-    }
-    to{
 
-        background-color: rgba(0, 0, 0, 0.669);
-        opacity: 1;
-
-    }
-}
 .titreSectionPortfolio{
     color: rgb(165, 14, 14);
 }
@@ -365,25 +361,6 @@ body{
 }
 
 
-@mixin  indexModal(){
-    z-index: 9999;
-}
-
-.exo01{
-    @include indexModal();
-}
-.exo02{
-    @include indexModal();
-}
-.exo03{
-    @include indexModal();
-}
-.exo04{
-    @include indexModal();
-}
-.exo05{
-    @include indexModal();
-}
 ///////////////////////////////////// SECTION CV //////////////////////////////////////////////////
 /// 
 
@@ -913,6 +890,3 @@ body{
 
 
 
-.shad{
-  box-shadow: 0 3px 6px #0003;
-}

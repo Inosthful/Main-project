@@ -354,19 +354,15 @@ body {
     opacity: 1;
   }
 }
-.hoverImage:hover {
-  animation: hoverImage 1.5;
+.shad {
+  border: solid 1px rgb(193, 191, 191);
 }
 
-@keyframes hoverImage {
-  from {
-    opacity: 0;
-  }
-  to {
-    background-color: rgba(0, 0, 0, 0.669);
-    opacity: 1;
-  }
+.bd {
+  border-radius: 8px;
+  cursor: pointer;
 }
+
 .titreSectionPortfolio {
   color: rgb(165, 14, 14);
 }
@@ -393,26 +389,6 @@ body {
 #porfolio {
   transition: all 1.5s ease-in-out;
   animation: linear 1.5s;
-}
-
-.exo01 {
-  z-index: 9999;
-}
-
-.exo02 {
-  z-index: 9999;
-}
-
-.exo03 {
-  z-index: 9999;
-}
-
-.exo04 {
-  z-index: 9999;
-}
-
-.exo05 {
-  z-index: 9999;
 }
 
 .text-color {
@@ -937,9 +913,6 @@ body {
   .bgSection {
     background-image: linear-gradient(#232427, #0b0707);
   }
-}
-.shad {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
