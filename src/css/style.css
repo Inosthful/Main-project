@@ -363,6 +363,11 @@ body {
   cursor: pointer;
 }
 
+.bdExo3 {
+  border-radius: 13px;
+  cursor: pointer;
+}
+
 .titreSectionPortfolio {
   color: rgb(165, 14, 14);
 }
