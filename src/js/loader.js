@@ -5,11 +5,11 @@ const anime = window.anime;
 
 $(window).on('load', function() { // makes sure the whole site is loaded 
 	$('#status').delay(2200).fadeOut('slow'); // will first fade out the loading animation 
-	$('#preloader').delay(3500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+	$('#preloader').delay(3600).fadeOut('slow'); // will fade out the white DIV that covers the website. 
 
 })
 
-anime.timeline({loop: true})
+anime.timeline({loop: false})
   .add({
     targets: '.ml5 .line',
     opacity: [0.5,1],
