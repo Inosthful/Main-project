@@ -64,6 +64,12 @@ sr.reveal('.exo07',{
     distance: "30px",
     origin: "top"
 });
+sr.reveal('.exo08',{
+    delay: 1600,
+    duration: 2000,
+    distance: "30px",
+    origin: "top"
+});
 
 sr.reveal('.cvTitle',{
     delay: 1,
