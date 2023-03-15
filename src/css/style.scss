@@ -21,6 +21,33 @@ header.masthead p { font-weight: 300; }
   header.masthead h1 { font-size: 4rem; }
 }
 
+.cursor {
+  z-index: 1000;
+  pointer-events: none;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+    background-color 0.3s, width 0.3s, height 0.3s;
+  width: 10px;
+  height: 10px;
+
+  background-color: #630d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.active {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  &.hidden {
+    opacity: 0 !important;
+  }
+}
+
+
 // npx sass --watch src/css/style.scss:src/css/style.css
 
 /* //////////////////////////////////   PARTICLE JS   ///////////////////////////////// */
@@ -58,6 +85,8 @@ body{
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     animation: scrollNone 4.1s;
+    cursor: none;
+    overflow-x:hidden;
 
 }
 
