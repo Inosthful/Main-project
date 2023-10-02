@@ -21,6 +21,9 @@ header.masthead p { font-weight: 300; }
   header.masthead h1 { font-size: 4rem; }
 }
 
+
+
+
 // @media(min-width:700px) {
 //   .cursor {
 //     z-index: 1000;
@@ -53,6 +56,30 @@ header.masthead p { font-weight: 300; }
 // npx sass --watch src/css/style.scss:src/css/style.css
 
 /* //////////////////////////////////   PARTICLE JS   ///////////////////////////////// */
+
+.arrow-down.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+}
+
+.arrow-down.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
 
 
 
@@ -370,7 +397,7 @@ body{
 }
 
 .tailleImg8{
-  height: 216px;
+  height: 201.38px;
   border: solid 1px rgba(131, 130, 130, 0.474);
 }
 
