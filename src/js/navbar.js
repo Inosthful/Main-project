@@ -1,3 +1,4 @@
+// old version
 // function navbar() {
 //     var mainNav = document.querySelector('#mainNav');
 //     if (mainNav.offsetTop < 100) {
