@@ -1,0 +1,6 @@
+RECOMMENCER TOUT AVEC VITE POUR LES BUNDLERS ET POUVOIR LES RUN BUILDS 
+
+UTILISER AOS ( data aos tout ca voir projet workshop ) pour les animations au scroll c'est tellement plus clean
+
+MODELE 3D sur le site avec les planetes etc en 3d 
+
